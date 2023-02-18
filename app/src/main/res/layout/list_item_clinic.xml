@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_square">
+
+        <TextView
+            android:id="@+id/tv_title_clinic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Subtitle"
+            android:textSize="@dimen/ts_clinic_card_title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_content_clinic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            android:textSize="@dimen/ts_clinic_card_content"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_clinic"
+            app:layout_constraintEnd_toEndOf="@id/guideline2" />
+
+        <TextView
+            android:id="@+id/tv_date_clinic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2023.02.16"
+            android:textSize="@dimen/ts_clinic_card_date"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content_clinic"
+            app:layout_constraintEnd_toEndOf="@id/guideline2" />
+
+        <View
+            android:id="@+id/div_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/div_line_color"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_clinic"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_favorite_clinic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="좋아요 0"
+            android:textColor="@color/selector_favorite_color"
+            android:textSize="@dimen/ts_clinic_button"
+            app:layout_constraintTop_toBottomOf="@+id/div_line1"
+            app:icon="@drawable/favorite"
+            app:iconTint="@color/selector_favorite_color"
+            app:iconGravity="textStart" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

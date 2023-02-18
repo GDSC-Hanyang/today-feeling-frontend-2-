@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="primary_color">#FF84CBC3</color>
+
+    <color name="div_line_color">#FFE9E9E9</color>
+    <color name="div_btn_bg_color">#FFF8F8F8</color>
 </resources>

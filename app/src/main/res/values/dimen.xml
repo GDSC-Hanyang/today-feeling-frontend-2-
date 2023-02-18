@@ -2,7 +2,19 @@
 <resources>
     <dimen name="ts_home_title">20sp</dimen>
     <dimen name="ts_home_button">13sp</dimen>
-    
+
+    <dimen name="ts_clinic_title">20sp</dimen>
+    <dimen name="ts_clinic_button">13sp</dimen>
+
     <dimen name="ts_calendar_week">13sp</dimen>
     <dimen name="ts_calendar_day">13sp</dimen>
+
+    <dimen name="ts_clinic_card_title">16sp</dimen>
+    <dimen name="ts_clinic_card_content">14sp</dimen>
+    <dimen name="ts_clinic_card_date">12sp</dimen>
+    <dimen name="ts_clinic_card_button">13sp</dimen>
+
+    <dimen name="ts_report_card_content">14sp</dimen>
+    <dimen name="ts_report_card_date">12sp</dimen>
+    <dimen name="ts_report_card_button">13sp</dimen>
 </resources>

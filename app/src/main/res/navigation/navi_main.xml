@@ -6,22 +6,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.naze.todayfeeling.presentation.HomeFragment"
+        android:name="com.naze.todayfeeling.presentation.home.HomeFragment"
         android:label="HomeFragment" />
     <fragment
         android:id="@+id/forestFragment"
-        android:name="com.naze.todayfeeling.presentation.ForestFragment"
+        android:name="com.naze.todayfeeling.presentation.forest.ForestFragment"
         android:label="ForestFragment" />
     <fragment
         android:id="@+id/clinicFragment"
-        android:name="com.naze.todayfeeling.presentation.ClinicFragment"
+        android:name="com.naze.todayfeeling.presentation.clinic.ClinicFragment"
         android:label="ClinicFragment" />
     <fragment
         android:id="@+id/reportFragment"
-        android:name="com.naze.todayfeeling.presentation.ReportFragment"
+        android:name="com.naze.todayfeeling.presentation.report.ReportFragment"
         android:label="ReportFragment" />
     <fragment
         android:id="@+id/statsFragment"
-        android:name="com.naze.todayfeeling.presentation.StatsFragment"
+        android:name="com.naze.todayfeeling.presentation.stats.StatsFragment"
         android:label="StatsFragment" />
 </navigation>

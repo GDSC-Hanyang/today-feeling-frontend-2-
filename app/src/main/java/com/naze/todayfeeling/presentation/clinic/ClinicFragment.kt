@@ -1,4 +1,4 @@
-package com.naze.todayfeeling.presentation
+package com.naze.todayfeeling.presentation.clinic
 
 import android.os.Bundle
 import com.naze.todayfeeling.R

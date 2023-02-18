@@ -1,9 +1,7 @@
-package com.naze.todayfeeling.presentation
+package com.naze.todayfeeling.presentation.home
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import com.naze.todayfeeling.R
