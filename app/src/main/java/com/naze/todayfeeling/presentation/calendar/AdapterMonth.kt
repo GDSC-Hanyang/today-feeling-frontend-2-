@@ -31,8 +31,8 @@ class AdapterMonth: RecyclerView.Adapter<AdapterMonth.MonthView>() {
 
         val tempMonth = calendar.get(Calendar.MONTH)
 
-        val dayList: MutableList<Date> = MutableList(5*7) { Date() }
-        for (i in 0..4) {
+        val dayList: MutableList<Date> = MutableList(6*7) { Date() }
+        for (i in 0..5) {
             for (j in 0..6) {
                 calendar.add(Calendar.DAY_OF_MONTH, (1-calendar.get(Calendar.DAY_OF_WEEK))+j)
                 dayList[i*7+j] = calendar.time

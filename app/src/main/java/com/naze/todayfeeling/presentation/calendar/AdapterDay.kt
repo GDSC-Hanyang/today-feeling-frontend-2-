@@ -13,7 +13,7 @@ import java.util.*
 
 
 class AdapterDay(private val tempMonth: Int, private val dayList: MutableList<Date>): RecyclerView.Adapter<AdapterDay.DayView>() {
-    private val row = 5
+    private val row = dayList.size/7
 
     inner class DayView(val layout: View): RecyclerView.ViewHolder(layout)
 
