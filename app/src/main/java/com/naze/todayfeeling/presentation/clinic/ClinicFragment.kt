@@ -16,12 +16,12 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import java.util.Calendar
+import java.util.*
+import kotlin.collections.ArrayList
 
 class ClinicFragment: BindingFragment<FragmentClinicBinding>(R.layout.fragment_clinic) {
     private lateinit var clinicAdapter: ClinicAdapter
     private lateinit var model: ClinicViewModel
-    private var page = 1
 
     private var dtoList: ArrayList<ClinicData> = ArrayList()
     private var items: ArrayList<ClinicData?> = ArrayList()
@@ -50,7 +50,6 @@ class ClinicFragment: BindingFragment<FragmentClinicBinding>(R.layout.fragment_c
             clinicAdapter = ClinicAdapter(items)
             adapter = clinicAdapter
         }
-
     }
 
     private fun initScrollListener() {
@@ -75,7 +74,8 @@ class ClinicFragment: BindingFragment<FragmentClinicBinding>(R.layout.fragment_c
 
     private fun setData() {
         for (i in 0 until 100) {
-            dtoList.add(ClinicData("Test Title $i", "Test Contents",Calendar.getInstance().time,0,false))
+            dtoList.add(ClinicData(i,"Test Title $i", "Test Contents",Calendar.getInstance().time,
+                Random().nextInt(120),false))
         }
         for (i in 0 until 10) {
             items.add(dtoList[i])

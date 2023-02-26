@@ -3,18 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="forest"
+            type="com.naze.todayfeeling.domain.model.ForestData" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="5dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/round_square">
 
         <ImageView
-            android:id="@+id/tv_title_post"
+            android:id="@+id/tv_image_forest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_test"
@@ -23,25 +28,25 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_content_post"
+            android:id="@+id/tv_content_forest"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            android:text="@{forest.content}"
             android:textSize="@dimen/ts_report_card_content"
             app:layout_constraintStart_toStartOf="@id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/tv_title_post"
+            app:layout_constraintTop_toBottomOf="@+id/tv_image_forest"
             app:layout_constraintEnd_toEndOf="@id/guideline2" />
 
         <TextView
-            android:id="@+id/tv_date_post"
+            android:id="@+id/tv_date_forest"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="2023.02.16"
+            android:text="@{forest.date.toString()}"
             android:textSize="@dimen/ts_report_card_date"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@id/guideline"
-            app:layout_constraintTop_toBottomOf="@+id/tv_content_post"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content_forest"
             app:layout_constraintEnd_toEndOf="@id/guideline2" />
 
         <View
@@ -51,17 +56,18 @@
             android:background="@color/div_line_color"
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_date_post"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date_forest"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_favorite_post"
+            android:id="@+id/btn_favorite_forest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:text="좋아요 0"
+            android:text="좋아요"
             android:textColor="@color/selector_favorite_color"
             android:textSize="@dimen/ts_clinic_button"
+            android:selected="@{forest.favCheck}"
             app:layout_constraintTop_toBottomOf="@+id/div_line1"
             app:icon="@drawable/favorite"
             app:iconTint="@color/selector_favorite_color"

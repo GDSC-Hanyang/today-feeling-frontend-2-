@@ -1,12 +1,13 @@
 package com.naze.todayfeeling.domain.model
 
-import java.util.Date
+import java.util.*
 
-data class ClinicData(
+data class ReportData(
     var id: Int,
-    var title: String,
     var content: String,
     var date: Date,
     var favCount: Int,
     var favCheck: Boolean
-)
+) {
+
+}
