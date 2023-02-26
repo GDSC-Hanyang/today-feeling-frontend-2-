@@ -17,4 +17,8 @@
     <dimen name="ts_report_card_content">14sp</dimen>
     <dimen name="ts_report_card_date">12sp</dimen>
     <dimen name="ts_report_card_button">13sp</dimen>
+
+    <dimen name="iv_feeling_size">40dp</dimen>
+    <dimen name="ts_feeling_select_box">13sp</dimen>
+    <dimen name="ts_feeling_title">22sp</dimen>
 </resources>
